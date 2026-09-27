@@ -1,0 +1,17 @@
+[project]
+name = "pong-game"
+version = "1.0.0"
+description = "Classic Pong built with Python's turtle module"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Omith Chowdhury" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+pong = "pong.app:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-p no:cacheprovider"
